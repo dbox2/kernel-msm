@@ -4,6 +4,8 @@
 
 # Each configuration option enables a list of files.
 
+EXTRA_CFLAGS += -Wno-array-bounds
+
 obj-$(CONFIG_MOUSE_AMIGA)		+= amimouse.o
 obj-$(CONFIG_MOUSE_APPLETOUCH)		+= appletouch.o
 obj-$(CONFIG_MOUSE_ATARI)		+= atarimouse.o
